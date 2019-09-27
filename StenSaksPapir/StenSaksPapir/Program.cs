@@ -15,9 +15,13 @@ namespace StenSaksPapir
             Console.WriteLine("indtast spiller 2 ");
             string spiller2 = Console.ReadLine();
 
+            Console.Clear();
+
             string spiligen = "ja";
             while (spiligen == "ja")
             {
+                Console.Clear();
+
                 bool dum;
                 int våben1, våben2;
                 do
