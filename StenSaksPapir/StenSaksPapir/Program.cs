@@ -88,6 +88,8 @@ namespace StenSaksPapir
                 
                 Console.WriteLine("\nSpil igen?\n ja/nej");
                 spiligen = Console.ReadLine();
+                Console.Clear();
+
 
                 
             }
