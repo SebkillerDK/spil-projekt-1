@@ -15,8 +15,15 @@ namespace Krig
             KortBunke hovedBunke = new KortBunke();
             hovedBunke.lavBunkeKort();
 
+            Console.WriteLine("Indtast navn for spiller1: ");
+            Spiller spiller1 = new Spiller(Console.ReadLine());
+            Console.WriteLine("Indtast navn for spiller2: ");
+            Spiller spiller2 = new Spiller(Console.ReadLine());
 
+            hovedBunke.givKort(spiller1, spiller2);     
+            
 
+    
             Console.ReadLine();
         }
     }

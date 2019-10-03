@@ -30,24 +30,22 @@ namespace Krig
                     i++;
                 }
             }
-            BlandKort();
-            givKort();
+            BlandKort();            
         }
-
-        private void givKort(spiller spiller1, spiller spiller2)
+        
+        public void givKort(Spiller spiller1, Spiller spiller2)
         {
-            //tilpads så hver spiller for hver deres halvdel af bunken
 
             // første 26 kort til spiller1
             for (int i = 0; i < 26; i++)
-                spiller1[i] = hentBunke[i];
+                spiller1.bunke.Add(hentBunke[i]);
 
             // sidste 26 kort til spiller2
             for (int i = 26; i < 52; i++)
-                spiller2[i - 26] = hentBunke[i];
+                spiller2.bunke.Add(hentBunke[i]);
 
         }
-
+        
         // bland bunken af kort
         public void BlandKort()
         {

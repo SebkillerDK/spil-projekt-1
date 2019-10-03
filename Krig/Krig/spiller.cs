@@ -6,20 +6,16 @@ using System.Threading.Tasks;
 
 namespace Krig
 {
-    class spiller
+    class Spiller
     {
-        private Kort[] bunke;
-        private string navn;
+        public List<Kort> bunke;
+        public string navn;
 
-        public spiller(string spillernavn)
+        public Spiller(string spillernavn)
         {
             navn = spillernavn;
-            // liste til kortbunke skabt af givhånd. skal kunne indeholde ALLE 52 kort.
-
-        }
-
-        
-
+            bunke = new List<Kort>();
+        }     
         
     }
 }
