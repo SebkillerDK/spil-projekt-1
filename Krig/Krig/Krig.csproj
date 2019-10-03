@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KortBunke.cs" />
     <Compile Include="Kort.cs" />
     <Compile Include="Kamp.cs" />
     <Compile Include="Program.cs" />

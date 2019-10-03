@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Krig
 {
-
     public enum Kulør
     {
         HJERTER,
@@ -14,31 +13,23 @@ namespace Krig
         SPAR,
         RUDER,
     }
-
     public enum Værdi
     {
         two = 2, tre = 3, fire = 4, fem = 5, seks = 6, syv = 7, otte = 8,
-        ni = 9, ti = 10, knægt = 11, droning = 12, konge = 13, es = 14
+        ni = 9, ti = 10, knægt = 11, droning = 12, konge = 13, es = 1
     }
-
     public class Kort
-    {       
-       
-        public Kulør Kulør
-        {
-            get;
-            set;
-
-        }
-        public Værdi Værdi
+    {             
+        public Kulør MinKulør
         {
             get;
             set;
         }
-
-
-
-
+        public Værdi MinVærdi
+        {
+            get;
+            set;
+        }
     }
 }
 

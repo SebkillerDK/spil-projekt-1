@@ -10,8 +10,14 @@ namespace Krig
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("test");
+
+            KortBunke hovedBunke = new KortBunke();
+            hovedBunke.lavBunkeKort();
 
 
+
+            Console.ReadLine();
         }
     }
 }
