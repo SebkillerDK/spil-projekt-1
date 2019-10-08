@@ -25,6 +25,8 @@ namespace Krig
 
     
             Console.ReadLine();
+
+            
         }
     }
 }

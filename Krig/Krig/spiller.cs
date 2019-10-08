@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Krig
 {
-    class Spiller
+    public class Spiller
     {
         public List<Kort> bunke;
-        public string navn;
+        private string navn;
+        public string Navn { get { return this.navn; } set { this.navn = value; } }
 
         public Spiller(string spillernavn)
         {
-            navn = spillernavn;
+            Navn = spillernavn;
             bunke = new List<Kort>();
         }     
         
